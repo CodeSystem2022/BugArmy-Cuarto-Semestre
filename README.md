@@ -1,10 +1,15 @@
 <div align="center">
+  <h1>Bug Army</h1>
+</div>
+<div align="center">
+   <a href="https://github.com/CodeSystem2022/BugArmy-Tercer-Semestre/assets/79487697/8f9cd6ce-004a-4477-a28d-d0b6675cbeb4">
+      <img src="https://github.com/CodeSystem2022/BugArmy-Tercer-Semestre/assets/79487697/8f9cd6ce-004a-4477-a28d-d0b6675cbeb4" alt="Image" width="120">
+    </a>
+</div>
+<div align="center">
   <div style="display: flex; align-items: center;">
     <a href="https://github.com/CodeSystem2022/BugArmy-cuarto-Semestre">
       <img src="https://github-readme-stats.vercel.app/api/pin/?username=CodeSystem2022&repo=BugArmy-cuarto-Semestre&theme=github_dark" alt="Readme Card" width="400">
-    </a>
-    <a href="https://github.com/CodeSystem2022/BugArmy-Tercer-Semestre/assets/79487697/8f9cd6ce-004a-4477-a28d-d0b6675cbeb4">
-      <img src="https://github.com/CodeSystem2022/BugArmy-Tercer-Semestre/assets/79487697/8f9cd6ce-004a-4477-a28d-d0b6675cbeb4" alt="Image" width="120">
     </a>
   </div>
 </div>
