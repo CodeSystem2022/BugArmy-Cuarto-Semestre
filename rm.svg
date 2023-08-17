@@ -1,8 +1,8 @@
-<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
+<svg fill="none" viewBox="0 0 700 700" width="700" height="700" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%" top="0" display="flex">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        @keyframes hi  {
+        @keyframes bug {
             0% { transform: rotate( 0.0deg) }
            10% { transform: rotate(14.0deg) }
            20% { transform: rotate(-8.0deg) }
@@ -24,8 +24,45 @@
             background-position: 0% 50%;
           }
         }
-
-        .container {
+        @keyframes intro {
+        0%, 75% { transform: translateX(-100vw); }
+        100% { transform: translateX(0); }
+        }
+        
+        .container{
+          height:700px;
+          display:flex-box;
+        }
+        .content{
+          display:flex;
+          flex-direction:column;
+          justify-content: center;
+          align-items:center;
+          height: 580px;
+          width:100%;
+          
+          background-color: #1B2430;
+          padding-top: 10px;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+        .animatedText {
+          color:white;
+          animation: intro 2.5s cubic-bezier(1,1,0,0) -0.5s 1;
+          padding-bottom:7px;
+          font-size:23px;
+        }
+        .animatedText:hover{
+           --color-main: #5452ee;
+          --color-primary: #e73c7e;
+          --color-secondary: #23a6d5;
+          --color-tertiary: #ffff;
+          background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
+          background-size: 400% 400%;
+          animation: gradient 15s ease infinite;
+			    -webkit-text-fill-color: transparent;
+			    -webkit-background-clip: text;
+        }
+        .header {
           --color-main: #5452ee;
           --color-primary: #e73c7e;
           --color-secondary: #23a6d5;
@@ -36,27 +73,68 @@
           animation: gradient 15s ease infinite;
 
           width: 100%;
-          height: 300px;
-
+          height: 120px;
+        
           display: flex;
           justify-content: center;
           align-items: center;
           color: white;
-
+          overflow:hidden;
+        
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         }
-
-        .logo {
-          animation: hi 1.5s linear -0.5s infinite;
+        
+        .bug {
+          animation: bug 1.5s linear -0.5s infinite;
           display: inline-block;
           transform-origin: 70% 70%;
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+        @keyframes color-change {
+                0% { color: #23a6d5; }
+                50% { color: #e73c7e; }
+                100% { color: #5452ee; }
+              }
+        .title{
+          margin-top:-80px;
+          --color-main: #5452ee;
+          --color-primary: #e73c7e;
+          --color-secondary: #23a6d5;
+          --color-tertiary: #ffff;
+          background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
+          background-size: 400% 400%;
+          animation: gradient 15s ease infinite;
+			    -webkit-text-fill-color: transparent;
+			    -webkit-background-clip: text;
+        }
+        .titleHid{
+          visibility: hidden;
         }
 
       </style>
-
-      <div class="container">
-        <h1>BugArmy</h1>
+    <div class="container">
+      <div class="header">
+        <h1><div class="bug">👾</div>BugArmy<div class="bug">👾</div></h1>
       </div>
+       <div class="content">
+         <h1 class="title">Integrantes</h1>
+        
+         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✓ </span>Facundo Gervasi<span class="title"> (Scrum semana 1)</span></a>
+         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="title"> (Scrum semana 2)</span></a>
+         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="title"> (Scrum semana 3)</span></a>
+         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 4)</span></a>
+         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 5)</span></a>
+         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 6)</span></a>
+         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 7)</span></a>
+         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 8)</span></a>
+         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 9)</span></a>
+         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 10)</span></a>
+         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 11)</span></a>
+      </div>
+     </div>
+     
     </div>
   </foreignObject>
 </svg>
+ 
