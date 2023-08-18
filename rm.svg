@@ -1,4 +1,4 @@
-<svg fill="none" viewBox="0 0 700 700" width="700" height="700" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 700 850" width="700" height="850" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%" top="0" display="flex">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
@@ -30,7 +30,7 @@
         }
         
         .container{
-          height:700px;
+          height:850px;
           display:flex-box;
         }
         .content{
@@ -38,7 +38,7 @@
           flex-direction:column;
           justify-content: center;
           align-items:center;
-          height: 580px;
+          height: 750px;
           width:100%;
           
           background-color: #1B2430;
@@ -78,7 +78,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          color: white;
+          color: #1B2430;
           overflow:hidden;
         
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -97,7 +97,7 @@
                 100% { color: #5452ee; }
               }
         .title{
-          margin-top:-80px;
+          margin-top:-120px;
           --color-main: #5452ee;
           --color-primary: #e73c7e;
           --color-secondary: #23a6d5;
@@ -111,26 +111,35 @@
         .titleHid{
           visibility: hidden;
         }
-
+	.lang{
+	      margin-top:20px;
+	      padding-top:20px;
+	      display:flex;
+	      justify-content:between;
+	}
       </style>
     <div class="container">
       <div class="header">
         <h1><div class="bug">👾</div>BugArmy<div class="bug">👾</div></h1>
       </div>
        <div class="content">
-         <h1 class="title">Integrantes</h1>
-        
-         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✓ </span>Facundo Gervasi<span class="title"> (Scrum semana 1)</span></a>
-         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="title"> (Scrum semana 2)</span></a>
-         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="title"> (Scrum semana 3)</span></a>
-         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 4)</span></a>
-         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 5)</span></a>
-         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 6)</span></a>
-         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 7)</span></a>
-         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 8)</span></a>
-         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 9)</span></a>
-         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 10)</span></a>
-         <a href="https://github.com/FacundoGerv" class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="titleHid"> (Scrum semana 11)</span></a>
+         <h1 class="title">Integrantes</h1>	
+         <a class="animatedText"><span class="title">✓ </span>Facundo Gervasi<span class="title"> (Scrum semana 1)</span></a>
+         <a class="animatedText"><span class="title">✘ </span>Jose Guajardo<span class="title"> (Scrum semana 2)</span></a>
+         <a class="animatedText"><span class="title">✘ </span>Adriel Mezzabotta<span class="title"> (Scrum semana 3)</span></a>
+         <a class="animatedText"><span class="title">✘ </span>Luciano Bugarin<span class="title"> (Scrum semana 4)</span></a>
+         <a class="animatedText"><span class="title">✘ </span>Martin Velazquez<span class="title"> (Scrum semana 5)</span></a>
+         <a class="animatedText"><span class="title">✘ </span>Kevin Baez<span class="title"> (Scrum semana 6)</span></a>
+         <a class="animatedText"><span class="title">✘ </span>Jesus Chavez<span class="title"> (Scrum semana 7)</span></a>
+         <a class="animatedText"><span class="title">✘ </span>Ivo Rossi<span class="title"> (Scrum semana 8)</span></a>
+         <a class="animatedText"><span class="title">✘ </span>Cristian Benegas<span class="title"> (Scrum semana 9)</span></a>
+         <a class="animatedText"><span class="title">✘ </span>Agustin Pinillos<span class="title"> (Scrum semana 10)</span></a>
+         <a class="animatedText"><span class="title">✘ </span>Rodrigo Amoros<span class="title"> (Scrum semana 11)</span></a>
+	<div class="lang">
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" width="78" alt="javascript logo"/>
+   	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="60" width="78" alt="java logo"/>
+   	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="60" width="78" alt="python logo"/>
+	</div>
       </div>
      </div>
      
