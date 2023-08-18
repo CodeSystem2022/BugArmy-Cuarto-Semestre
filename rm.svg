@@ -2,121 +2,145 @@
   <foreignObject width="100%" height="100%" top="0" display="flex">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
+	      
         @keyframes bug {
-            0% { transform: rotate( 0.0deg) }
-           10% { transform: rotate(14.0deg) }
-           20% { transform: rotate(-8.0deg) }
-           30% { transform: rotate(14.0deg) }
-           40% { transform: rotate(-4.0deg) }
-           50% { transform: rotate(10.0deg) }
-           60% { transform: rotate( 0.0deg) }
-          100% { transform: rotate( 0.0deg) }
-        }
+         	0% { transform: rotate( 0.0deg) }
+         	10% { transform: rotate(14.0deg) }
+         	20% { transform: rotate(-8.0deg) }
+         	30% { transform: rotate(14.0deg) }
+         	40% { transform: rotate(-4.0deg) }
+         	50% { transform: rotate(10.0deg) }
+         	60% { transform: rotate( 0.0deg) }
+         	100% { transform: rotate( 0.0deg) }
+        	}
 
         @keyframes gradient {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
-        }
+          	0% { background-position: 0% 50%; }
+          	50% { background-position: 100% 50%; }
+          	100% { background-position: 0% 50%; }
+        	}
+	      
         @keyframes intro {
-        0%, 75% { transform: translateX(-100vw); }
-        100% { transform: translateX(0); }
-        }
+        	0%, 75% { transform: translateX(-100vw); }
+        	100% { transform: translateX(0); }
+        	}
+	      
+	@keyframes color-change {
+        	0% { color: #23a6d5; }
+                50% { color: #e73c7e; }
+        	100% { color: #5452ee; }
+        	}
+	      
         
         .container{
-          height:850px;
-          display:flex-box;
-        }
+          	height:850px;
+          	display:flex-box;
+        	}
+	      
         .content{
-          display:flex;
-          flex-direction:column;
-          justify-content: center;
-          align-items:center;
-          height: 750px;
-          width:100%;
-          
-          background-color: #1B2430;
-          padding-top: 10px;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        }
+         	display:flex;
+         	flex-direction:column;
+         	justify-content: center;
+          	align-items:center;
+          	height: 750px;
+          	width:100%;
+          	background-color: #1B2430;
+          	padding-top: 10px;
+         	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        	}
+	      
         .animatedText {
-          color:white;
-          animation: intro 2.5s cubic-bezier(1,1,0,0) -0.5s 1;
-          padding-bottom:7px;
-          font-size:23px;
-        }
+          	color:white;
+          	animation: intro 2.5s cubic-bezier(1,1,0,0) -0.5s 1;
+          	padding-bottom:7px;
+          	font-size:23px;
+        	}
+	      
         .animatedText:hover{
-           --color-main: #5452ee;
-          --color-primary: #e73c7e;
-          --color-secondary: #23a6d5;
-          --color-tertiary: #ffff;
-          background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
-          background-size: 400% 400%;
-          animation: gradient 15s ease infinite;
-			    -webkit-text-fill-color: transparent;
-			    -webkit-background-clip: text;
-        }
+           	--color-main: #5452ee;
+          	--color-primary: #e73c7e;
+          	--color-secondary: #23a6d5;
+          	--color-tertiary: #ffff;
+          	background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
+          	background-size: 400% 400%;
+          	animation: gradient 15s ease infinite;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+        	}
+	      
         .header {
-          --color-main: #5452ee;
-          --color-primary: #e73c7e;
-          --color-secondary: #23a6d5;
-          --color-tertiary: #ffff;
-
-          background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
-          background-size: 400% 400%;
-          animation: gradient 15s ease infinite;
-
-          width: 100%;
-          height: 120px;
-        
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: #1B2430;
-          overflow:hidden;
-        
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        }
+          	--color-main: #5452ee;
+          	--color-primary: #e73c7e;
+          	--color-secondary: #23a6d5;
+          	--color-tertiary: #ffff;
+          	background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
+          	background-size: 400% 400%;
+          	animation: gradient 15s ease infinite;
+          	width: 100%;
+          	height: 120px;
+          	display: flex;
+          	justify-content: center;
+          	align-items: center;
+          	color: #1B2430;
+         	overflow:hidden;
+          	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	      	}
         
         .bug {
-          animation: bug 1.5s linear -0.5s infinite;
-          display: inline-block;
-          transform-origin: 70% 70%;
-          margin-left: 15px;
-          margin-right: 15px;
-        }
-        @keyframes color-change {
-                0% { color: #23a6d5; }
-                50% { color: #e73c7e; }
-                100% { color: #5452ee; }
-              }
+          	animation: bug 1.5s linear -0.5s infinite;
+       		display: inline-block;
+        	transform-origin: 70% 70%;
+        	margin-left: 15px;
+         	margin-right: 15px;
+        	}
+	      
         .title{
-          margin-top:-120px;
-          --color-main: #5452ee;
-          --color-primary: #e73c7e;
-          --color-secondary: #23a6d5;
-          --color-tertiary: #ffff;
-          background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
-          background-size: 400% 400%;
-          animation: gradient 15s ease infinite;
-			    -webkit-text-fill-color: transparent;
-			    -webkit-background-clip: text;
-        }
+          	margin-top:-120px;
+          	--color-main: #5452ee;
+          	--color-primary: #e73c7e;
+          	--color-secondary: #23a6d5;
+          	--color-tertiary: #ffff;
+          	background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
+          	background-size: 400% 400%;
+          	animation: gradient 15s ease infinite;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+        	}
+	      
         .titleHid{
-          visibility: hidden;
-        }
+          	visibility: hidden;
+        	}
+	      
 	.lang{
-	      margin-top:20px;
-	      padding-top:20px;
-	      display:flex;
-	      justify-content:between;
-	}
+	      	margin-top:0px;
+	      	padding-top:20px;
+	      	display:flex;
+	      	justify-content:between;
+		}
+	      
+	.lang-title{
+          	--color-main: #5452ee;
+          	--color-primary: #e73c7e;
+          	--color-secondary: #23a6d5;
+          	--color-tertiary: #ffff;
+		padding-left:20px;
+          	color:white;
+	      	font-size:25px;
+	      }
+	.lang-title-h1{
+          	--color-main: #5452ee;
+          	--color-primary: #e73c7e;
+          	--color-secondary: #23a6d5;
+          	--color-tertiary: #ffff;
+		padding-left:20px;
+          	background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
+          	background-size: 400% 400%;
+          	animation: gradient 15s ease infinite;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	      	font-size:25px;
+	      }
+	      
       </style>
     <div class="container">
       <div class="header">
@@ -135,10 +159,11 @@
          <a class="animatedText"><span class="title">✘ </span>Cristian Benegas<span class="title"> (Scrum semana 9)</span></a>
          <a class="animatedText"><span class="title">✘ </span>Agustin Pinillos<span class="title"> (Scrum semana 10)</span></a>
          <a class="animatedText"><span class="title">✘ </span>Rodrigo Amoros<span class="title"> (Scrum semana 11)</span></a>
-	<div class="lang">
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" width="78" alt="javascript logo"/>
-   	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="60" width="78" alt="java logo"/>
-   	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="60" width="78" alt="python logo"/>
+	<h1 class="lang-title-h1">Lenguajes Utilizados</h1>
+	<div class="lang">	
+	<span class="lang-title"><a class="title">☕</a> Java  </span>
+	<span class="lang-title"><a class="title">🐍</a> Python  </span>
+	<span class="lang-title"><a class="title" style="font-weight:500; font-family: fantasy;">[JS]</a> JavaScript  </span>
 	</div>
       </div>
      </div>
