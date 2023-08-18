@@ -142,32 +142,35 @@
 	      }
 	      
       </style>
-    <div class="container">
-      <div class="header">
-        <h1><div class="bug">👾</div>BugArmy<div class="bug">👾</div></h1>
-      </div>
-       <div class="content">
-         <h1 class="title">Integrantes</h1>	
-         <a class="animatedText"><span class="title">✓ </span>Facundo Gervasi<span class="title"> (Scrum semana 1)</span></a>
-         <a class="animatedText"><span class="title">✘ </span>Jose Guajardo<span class="title"> (Scrum semana 2)</span></a>
-         <a class="animatedText"><span class="title">✘ </span>Adriel Mezzabotta<span class="title"> (Scrum semana 3)</span></a>
-         <a class="animatedText"><span class="title">✘ </span>Luciano Bugarin<span class="title"> (Scrum semana 4)</span></a>
-         <a class="animatedText"><span class="title">✘ </span>Martin Velazquez<span class="title"> (Scrum semana 5)</span></a>
-         <a class="animatedText"><span class="title">✘ </span>Kevin Baez<span class="title"> (Scrum semana 6)</span></a>
-         <a class="animatedText"><span class="title">✘ </span>Jesus Chavez<span class="title"> (Scrum semana 7)</span></a>
-         <a class="animatedText"><span class="title">✘ </span>Ivo Rossi<span class="title"> (Scrum semana 8)</span></a>
-         <a class="animatedText"><span class="title">✘ </span>Cristian Benegas<span class="title"> (Scrum semana 9)</span></a>
-         <a class="animatedText"><span class="title">✘ </span>Agustin Pinillos<span class="title"> (Scrum semana 10)</span></a>
-         <a class="animatedText"><span class="title">✘ </span>Rodrigo Amoros<span class="title"> (Scrum semana 11)</span></a>
-	<h1 class="lang-title-h1">Lenguajes Utilizados</h1>
-	<div class="lang">	
-	<span class="lang-title"><a class="title">☕</a> Java  </span>
-	<span class="lang-title"><a class="title">🐍</a> Python  </span>
-	<span class="lang-title"><a class="title" style="font-weight:500; font-family: fantasy;">[JS]</a> JavaScript  </span>
-	</div>
-      </div>
-     </div>
-     
+   	<div class="container">
+      		<div class="header">
+        		<h1>
+				<div class="bug">👾</div>
+					BugArmy
+				<div class="bug">👾</div>
+			</h1>
+      		</div>
+		<div class="content">
+        		<h1 class="title">Integrantes</h1>	
+        		<a class="animatedText"><span class="title">✓ </span>Facundo Gervasi<span class="title"> (Scrum semana 1)</span></a>
+         		<a class="animatedText"><span class="title">✘ </span>Jose Guajardo<span class="title"> (Scrum semana 2)</span></a>
+         		<a class="animatedText"><span class="title">✘ </span>Adriel Mezzabotta<span class="title"> (Scrum semana 3)</span></a>
+         		<a class="animatedText"><span class="title">✘ </span>Luciano Bugarin<span class="title"> (Scrum semana 4)</span></a>
+         		<a class="animatedText"><span class="title">✘ </span>Martin Velazquez<span class="title"> (Scrum semana 5)</span></a>
+         		<a class="animatedText"><span class="title">✘ </span>Kevin Baez<span class="title"> (Scrum semana 6)</span></a>
+         		<a class="animatedText"><span class="title">✘ </span>Jesus Chavez<span class="title"> (Scrum semana 7)</span></a>
+         		<a class="animatedText"><span class="title">✘ </span>Ivo Rossi<span class="title"> (Scrum semana 8)</span></a>
+         		<a class="animatedText"><span class="title">✘ </span>Cristian Benegas<span class="title"> (Scrum semana 9)</span></a>
+         		<a class="animatedText"><span class="title">✘ </span>Agustin Pinillos<span class="title"> (Scrum semana 10)</span></a>
+         		<a class="animatedText"><span class="title">✘ </span>Rodrigo Amoros<span class="title"> (Scrum semana 11)</span></a>
+			<h1 class="lang-title-h1">Lenguajes Utilizados</h1>
+		<div class="lang">	
+			<span class="lang-title"><a class="title">☕</a> Java  </span>
+			<span class="lang-title"><a class="title">🐍</a> Python  </span>
+			<span class="lang-title"><a class="title" style="font-weight:500; font-family: fantasy;">[JS]</a> JavaScript  </span>
+		</div>
+      		</div>
+    	</div>
     </div>
   </foreignObject>
 </svg>
