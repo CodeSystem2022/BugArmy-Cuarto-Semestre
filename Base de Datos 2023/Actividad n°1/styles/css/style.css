@@ -182,3 +182,12 @@ body {
     position: absolute;
     margin-top: 0px;
 }
+.display{
+    background-color: black;
+    height: 100%;
+    margin-top: 38px;
+    color:white;
+    z-index:-1;
+    position: absolute;
+    width: 100%;
+}
