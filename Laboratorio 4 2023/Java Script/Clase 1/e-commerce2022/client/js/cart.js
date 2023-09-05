@@ -47,7 +47,44 @@ const displayCart = () => {
         </div>
         `;
         modalContainer.append(modalBody);
+
+        const decrese = modalBody.querySelector(".quantity-btn-decrese");
+        decrese.addEventListener("click", () => {
+            if(product.quanty !== 1) {
+                product.quanty--;
+                displayCart();
+            }
+        });
+        const increse = modalBody.querySelector(".quantity-btn-increse");
+        increse.addEventListener("click", () => {
+            product.quanty++;
+            displayCart();
+        });
+        
+        //delete
+        const deleteProduct = modalBody.querySelector(".delete-product");
+
+        deleteProduct.addEventListener("click", () => {
+            deleteCartProduct(product.id);
+        });
     });
+
+    //modal fotter
+    const total = cart.reduce((acc, el) => acc + el.price * el.quanty, 0);
+
+    const modalFooter = document.createElement("div");
+    modalFooter.className = "modal-footer";
+    modalFooter.innerHTML = `
+    <div class="total-price">Total: ${total}</div>
+
+    `;
+    modalContainer.append(modalFooter);
 };
 
 cartBtn.addEventListener("click", displayCart);
+
+const deleteCartProduct = (id) => {
+    const foundId = cart.findIndex((element) => element.id === id);
+    cart.splice(foundId, 1);
+    displayCart();
+};
