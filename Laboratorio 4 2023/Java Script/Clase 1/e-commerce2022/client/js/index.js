@@ -23,7 +23,7 @@ productos.forEach((product) => {
             price: product.price,
             quanty: product.quanty,
             img: product.img,
-        })
+        });
         console.log(cart)
-    })
+    });
 });
