@@ -4,55 +4,55 @@ const productos = [
         productName: "Zapatillas",
         price: 17969,
         quanty: 1,
-        img: "/client/media/zapatillas.jpg"
+        img: "media/zapatillas.jpg"
     },
     {
         id: 2,
         productName: "Hacha",
         price: 17958,
         quanty: 1,
-        img: "/client/media/hacha.jpg"
+        img: "media/hacha.jpg"
     },
     {
         id: 3,
         productName: "Neumatico Dunlop",
         price: 111876,
         quanty: 1,
-        img: "/client/media/rueda.jpg"
+        img: "media/rueda.jpg"
     },
     {
         id: 4,
         productName: "Control Joystick PS5",
         price: 63999,
         quanty: 1,
-        img: "/client/media/control.jpg"
+        img: "media/control.jpg"
     },
     {
         id: 5,
         productName: "Mochila",
         price: 14990,
         quanty: 1,
-        img: "/client/media/mochila.jpg"
+        img: "media/mochila.jpg"
     },
     {
         id: 6,
         productName: "Celular Chamsun 22",
         price: 142980,
         quanty: 1,
-        img: "/client/media/celular.jpg"
+        img: "media/celular.jpg"
     },
     {
         id: 7,
         productName: "Cartera",
         price: 11725,
         quanty: 1,
-        img: "/client/media/cartera.jpg"
+        img: "media/cartera.jpg"
     },
     {
         id: 8,
         productName: "Bolso",
         price: 9500,
         quanty: 1,
-        img: "/client/media/bolso.jpg"
+        img: "media/bolso.jpg"
     },
 ];
