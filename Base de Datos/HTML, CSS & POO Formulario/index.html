@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BugArmy</title>
+    <!-- Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="box-login">
+       <div class="form">
+        <h2>Login</h2>
+        <div class="inputbox"> 
+            <input type="text" required="required">
+            <span>Usuario</span>
+            <i></i>
+        </div>
+        <div class="inputbox"> 
+            <input type="password" required="required">
+            <span>Contraseña</span>
+            <i></i>
+        </div>
+        <div class="links" >
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <a href="#">Register</a>
+        </div>
+        <input type="submit" value="Iniciar">
+       </div> 
+    </div>
+
+    <div class= "container">
+        <nav class="bug-main">
+            <img src="img/Bugax_logo.png" alt="BugArmyLogo" class="bug-nav">
+            <ul class="bug-menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#" id="loginButton">Login</a>
+                </li>
+            </ul>
+            <ul class="bug-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Script para abrir el formulario -->
+
+    <script>
+        const loginButton = document.getElementById("loginButton");
+        const loginForm = document.querySelector(".box-login");
+
+        loginButton.addEventListener("click", () => {
+            if (loginForm.style.display === "block" || loginForm.style.display === "") {
+                loginForm.style.display = "none";
+            } else {
+                loginForm.style.display = "block";
+                // Centrar el formulario nuevamente en la pantalla
+                loginForm.style.top = "50%";
+                loginForm.style.left = "50%";
+                loginForm.style.transform = "translate(-50%, -50%)";
+            }
+        });
+    </script>
+
+</body>
+</html>
