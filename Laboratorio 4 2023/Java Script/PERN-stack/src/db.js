@@ -1,6 +1,6 @@
 import pg from "pg";
 
-const pool = new pg.Pool({
+export const pool = new pg.Pool({
     port: 5432,
     host: "localhost",
     user: "postgres",
@@ -9,5 +9,5 @@ const pool = new pg.Pool({
 });
 
 pool.on("connect", () => {
-    console.log("conectando con la base de datos");
+    console.log("conectado a la base de datos");
 });
