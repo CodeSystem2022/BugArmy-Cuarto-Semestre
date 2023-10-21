@@ -141,6 +141,9 @@
 	      	font-size:25px;
 	      }
 	      
+     .strikethrough {
+          text-decoration: line-through;
+        }
       </style>
    	<div class="container">
       		<div class="header">
@@ -155,12 +158,12 @@
         		<a class="animatedText"><span class="title">✓ </span>Luciano Bugarin<span class="title"> (Scrum semana 1)</span></a>
          		<a class="animatedText"><span class="title">✓ </span>Adriel Mezzabotta<span class="title"> (Scrum semana 2)</span></a>
          		<a class="animatedText"><span class="title">✓ </span>Cristian Benegas<span class="title"> (Scrum semana 3)</span></a>
-         		<a class="animatedText"><span class="title">✓ </span>Jesus Chavez<span class="title"> (Scrum semana 4 y 7)</span></a>
-         		<a class="animatedText"><span class="title">✓ </span>Jose Guajardo<span class="title"> (Scrum semana 5)</span></a>
-         		<a class="animatedText"><span class="title">✓ </span>Kevin Baez<span class="title"> (Scrum semana 6)</span></a>
-         		<a class="animatedText"><span class="title">✘ </span> ̶A̶g̶u̶s̶t̶i̶n̶ ̶P̶i̶n̶i̶l̶l̶o̶s̶<span class="title"> (Scrum semana 7)</span></a>
-         		<a class="animatedText"><span class="title">✘ </span>Martin Velazquez<span class="title"> (Scrum semana 8)</span></a>
-         		<a class="animatedText"><span class="title">✘ </span> ̶R̶o̶d̶r̶i̶g̶o̶ ̶A̶m̶o̶r̶o̶s̶<span class="title"> (Scrum semana 9)</span></a>
+         		<a class="animatedText"><span class="title">✓ </span>Jesus Chavez<span class="title"> (Scrum semana 4)</span></a>
+         		<a class="animatedText"><span class="title">✘ </span>Jose Guajardo<span class="title"> (Scrum semana 5)</span></a>
+         		<a class="animatedText"><span class="title">✘ </span>Kevin Baez<span class="title"> (Scrum semana 6)</span></a>
+         		<a class="animatedText strikethrough"><span class="title">✘ </span><span class="strikethrough">Agus Pinillos</span><span class="title"> (Scrum semana 5)</span></a>
+				<a class="animatedText"><span class="title">✘ </span>Martin Velazquez<span class="title"> (Scrum semana 8)</span></a>
+          		<a class="animatedText strikethrough"><span class="title">✘ </span><span class="strikethrough">Rodrigo Amoros</span><span class="title"> (Scrum semana 9)</span></a>
          		<a class="animatedText"><span class="title">✘ </span>Ivo Rossi<span class="title"> (Scrum semana 10)</span></a>
          		<a class="animatedText"><span class="title">✘ </span>Facundo Gervasi<span class="title"> (Scrum semana 11)</span></a>
 			<h1 class="lang-title-h1">Lenguajes Utilizados</h1>
