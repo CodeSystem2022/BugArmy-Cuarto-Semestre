@@ -8,7 +8,7 @@
     "start": "node ."
   },
   "keywords": [],
-  "author": "",
+  "author": "BuwugArmy",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
