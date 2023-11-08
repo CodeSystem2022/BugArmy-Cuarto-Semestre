@@ -2,6 +2,9 @@ import { createContext, useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 
+//me canse, es el peor tutorial que he visto en toda mi vida, 
+//al equipo que subio este proyecto: por favor, nunca se dediquen a enseñar y lo digo con todo el respeto del mundo
+
 export const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
