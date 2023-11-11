@@ -7,6 +7,7 @@ function hola(nombre) {
         }, 1000);
     })
 }
+
 function hablar(nombre) {
     return new Promise( (resolve, reject) => { 
         setTimeout(function () {
@@ -19,7 +20,7 @@ function hablar(nombre) {
 function adios(nombre) {
     return new Promise((resolve, reject) => {
         setTimeout(function () {
-            console.log('Adiós ' + nombre); 
+            console.log('Adiós ' + nombre);
             reject('Hay un error');
         }, 1000);
     });
@@ -30,7 +31,7 @@ hola('Ariel')
     .then(hablar)
     .then(hablar)
     .then(hablar)
-    .then(adios) //.then retorna un valor
+    .then(adios) 
     .then((nombre) => {
         console.log('Terminando');
     })

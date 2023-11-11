@@ -6,7 +6,6 @@ async function hola(nombre) {
         }, 1000);
     })
 }
-
 async function hablar(nombre) {
     return new Promise((resolve, reject) => { 
         setTimeout(function () {
@@ -15,46 +14,41 @@ async function hablar(nombre) {
         }, 1000);
     });
 }
-
 async function adios(nombre) {
     return new Promise((resolve, reject) => {
         setTimeout(function () {
-            console.log('Adiós ' + nombre);
+            console.log('Adiós ' + nombre); 
             resolve();
         }, 1000);
     });
 }
-
 async function main() {
     let nombre = await hola('Ariel');
     await hablar();
+    //sin el await se manejan en segundo plano
     await hablar();
     await hablar();
     await adios(nombre);
     console.log('Termina el proceso...');
 
 }
-
 main();
-
 function sayHello(name) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => { 
         setTimeout(function () {
             console.log('Hello ' + name);
             resolve(name);
         }, 1000);
     });
 }
-
 function talk(name) {
-    return new Promise((resolve, reject) => { 
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             console.log('bla bla bla');
             resolve(name);
         }, 1000);
     });
 }
-
 function sayBye(name) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -63,7 +57,6 @@ function sayBye(name) {
         }, 1000);
     });
 }
-
 async function conversation(name) {
     console.log('Code in Eenglish');
     console.log('Starting async process...');
@@ -75,5 +68,4 @@ async function conversation(name) {
     console.log('Process completed')
 
 }
-
 conversation('Ariel');

@@ -13,11 +13,13 @@ function adios(nombre, otrocallback) {
     }, 1500);   
 }
 
-console.log('Iniciando');
+console.log('Iniciando el proceo...');
 
 hola('Carlos', function(nombre) {
     adios(nombre, function(){
-        console.log('Terminando');    
+        console.log('Terminando el proceso...');    
     });
 });
 
+//hola('Carlos', function(){});
+//adios('Carlos', function(){});
